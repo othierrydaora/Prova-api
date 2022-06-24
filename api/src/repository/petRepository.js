@@ -38,3 +38,10 @@ export async function alterarPet(pet, id) {
     const [resp] = await con.query(command, [pet.nome, id]);
     return resp.affectedRows;
 }
+
+export async function deletarPet(id) {
+    const command = `
+    delete from tb_pet where id_pet = ? `;
+    const [resp] = await con.query(command, [id]);
+    return resp.affectedRows;
+}

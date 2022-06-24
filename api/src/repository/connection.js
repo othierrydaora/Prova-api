@@ -15,6 +15,4 @@ const con = await mysql.createConnection({
     }
 })
 
-console.log(`${process.env.MYSQL_db}`);
-
 export { con };

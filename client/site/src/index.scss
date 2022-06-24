@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    text-decoration: none;
+}
+
+table {
+    margin-top: 70px;
+    border-collapse: collapse;
+
+    td {
+        border: 1px solid black;
+        padding: 8px 20px;
+
+        span {
+            cursor: pointer;
+            visibility: hidden;
+        }
+    }
+
+    
+
+    tr:hover {
+        td span { visibility: visible; }
+    }
+}
+
+input {
+    outline: none;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+}
+
+button {
+    border-radius: 30px;
+    padding: 10px 10px;
+    border: 1px solid;
+    cursor: pointer;
+    background-color: transparent;
+}
+
